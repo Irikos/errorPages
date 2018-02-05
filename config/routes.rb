@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get '/error404', :to => 'error_pages#error404'
 
   get '/error500', :to => 'error_pages#error500'
+  get '/error502', :to => 'error_pages#error502'
 
-
+  root 'error_pages#error404'
 end
